@@ -1,38 +1,79 @@
-# React Native Interview Homework
-The goal of the developer exercise is to take a quick dive into a React Native project and build a two screen contact manager app. and we will be evaluating the code.
+This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-## Timelines and Contact
-Expected time of completion is around 1-2 days of development, fitting the minimum requirements.
-## Setup and Running
-You can write your entire app as you would with any React Native
+# Getting Started
 
-### Turning In
-Once you are satisfied in your progress, please push to a repo, and invite jaltarjami@ub.edu.sa melsaid@ub.edu.sa a.fouad@ub.edu.sa to it.
+>**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
--------------------
+## Step 1: Start the Metro Server
 
-## Project Setting
-Here is our fake setting for the exercise:
+First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
 
-We are building a new application around managing contacts in a user’s phone. The goal of the assignment is to get a contact list display and drill-in page for a selected contact. This will be the base of further development, so the code must be ready for additions and changes. At this time, we do not need the favorite contact to persist after app is closed.
+To start Metro, run the following command from the _root_ of your React Native project:
 
-### Data
-Please read the contacts from the User's phonebook, and retrieve phone numbers, emails, and URLs for each contact.
-### Screens
+```bash
+# using npm
+npm start
 
-#### Contacts list
-This screen should minimally show a scrollable sorted list of up to 500 contacts (alphabetically by first name) and a single favorited contact (displayed above the list and in the normal sort-order). Users should be able to scroll through the list of contacts and tap any contact to view their full contact info page.
+# OR using Yarn
+yarn start
+```
 
-#### Contact Details
-The detailed contact information page should show the information of the chosen contact: emails, phone numbers, and anything else given in the contact data. The only interaction a user needs to perform at this time is to favorite the contact (There can only be one favorite - please make sure the interactions for overwriting current favorite are there). There should be a button to return to the contacts list.
+## Step 2: Start your Application
 
-### Extra Credit
-#### Contacts list
-- Contacts are searchable (type in name or number and see list filter)
-- Contacts are in header-sorted list - like native iOS
+Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
 
-#### Detailed Contact Info
-- Favorite Contact select persists on app re-launch
-- Ability to interact with contact data - call, email, visit website, open maps with any addresses
-- Have fallbacks for contacts with missing details (first/last name, emails, phone numbers) or contacts that are deemed a company
-- Images/Thumbnails for the contact with a placeholder for contacts without any
+### For Android
+
+```bash
+# using npm
+npm run android
+
+# OR using Yarn
+yarn android
+```
+
+### For iOS
+
+```bash
+# using npm
+npm run ios
+
+# OR using Yarn
+yarn ios
+```
+
+If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+
+This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+
+## Step 3: Modifying your App
+
+Now that you have successfully run the app, let's modify it.
+
+1. Open `App.tsx` in your text editor of choice and edit some lines.
+2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+
+   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+
+## Congratulations! :tada:
+
+You've successfully run and modified your React Native App. :partying_face:
+
+### Now what?
+
+- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
+- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+
+# Troubleshooting
+
+If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+
+# Learn More
+
+To learn more about React Native, take a look at the following resources:
+
+- [React Native Website](https://reactnative.dev) - learn more about React Native.
+- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
+- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
+- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
+- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
